@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Code+Pro:wght@400;700&display=swap');
+
+@import 'react-circular-progressbar/dist/styles.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+    --primary-color: #80B2F2;
+    --primary-light-color: #B4E4FF;
+    --primary-dark-color: #4C83BF;
+
+    --secondary-color: #F27294;
+    --secondary-light-color: #FFA4C4;
+    --secondary-dark-color: #BC4166;
+
+    --fundo-color: #f0f2f5;
+
+    --text-color: #100e21;
+
+    --shadow-input: 0.3rem 0.3rem 0.5rem rgba(76, 131, 191, 0.3);
+    --shadow-navbar: 0.7rem 0.7rem 0.7rem rgba(76, 132, 191, 0.3);
+
+    --background-navbar: linear-gradient(-90deg, #80b2f2 1.2%, #b4e4ff 98.66%);
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font: 400 1.6rem 'Source Code Pro', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background: var(--fundo-color);
+    height: 100vh;
+    color: var(--text-color);
+}
+
+a, input, button, textarea {
+    font: 400 1.8rem 'Source Code Pro', sans-serif;
+    color: var(--text-color);
+}
+
+a, button {
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    height: 4.5rem;
+    border: none;
+    padding: 1rem;
+    box-shadow: var(--shadow-input);
+    color: var(--text-color);
+
+    font: 400 1.6rem 'Source Code Pro', sans-serif;
+}
+
+button.btn-editar {
+  border: none;
+  background: transparent;
+
+  margin-left: 1rem;
+}
+
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 400ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes left {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-left {
+    animation-name: left;
+    animation-duration: 400ms;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes down {
+    from {
+      opacity: 0;
+      transform: translateY(-75px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-down {
+    animation-name: down;
+    animation-duration: 400ms;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes up-2 {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-up-2 {
+    animation-name: up-2;
+    animation-duration: 400ms;
+    animation-fill-mode: backwards;
+  }
+
+.mouse-hover:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.animate-up-one {
+    animation-delay: 150ms;
+}
+.animate-up-two {
+    animation-delay: 200ms;
+}
+.animate-up-three {
+    animation-delay: 250ms;
+}
+.animate-up-four {
+    animation-delay: 300ms;
+}
+.animate-up-five {
+    animation-delay: 350ms;
+}
+.animate-up-six {
+  animation-delay: 400ms;
+}

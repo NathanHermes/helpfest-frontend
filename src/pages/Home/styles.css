@@ -1,0 +1,362 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#home-background {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+main.home-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+main.home-container 
+  header.home-navbar {
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+    background: linear-gradient(90deg, #80b2f2 1.2%, #b4e4ff 98.66%);
+    box-shadow: var(--shadow-navbar);
+
+    animation-delay: 100ms;
+}
+
+main.home-container 
+  header.home-navbar 
+  div.home-navbar-title {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main.home-container 
+  header.home-navbar 
+  div.home-navbar-title h1 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(3rem, 7vh, 6rem);
+}
+
+main.home-container 
+  header.home-navbar 
+  div.home-navbar-title p {
+    font-size: clamp(1rem, 1.7rem, 2rem);
+}
+
+main.home-container 
+  header.home-navbar 
+  div.home-navbar-title p span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+main.home-container 
+  header.home-navbar 
+  div.home-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.home-container 
+  header.home-navbar  
+  div.home-dropdown 
+  div.home-dropdown-dropdown {
+    z-index: 1;
+    position: absolute;
+
+    width: fit-content;
+    top: 15%;
+    right: 5%;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 2rem;
+
+    background: #fff;
+    box-shadow: var(--shadow-navbar);
+
+    animation-delay: 150ms;
+}
+
+main.home-container 
+  header.home-navbar  
+  div.home-dropdown 
+  div.home-dropdown-dropdown a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1.5rem;
+    
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 2.4rem, 3rem);
+    font-weight: 700;
+
+    transition: 200ms;
+}
+
+main.home-container 
+  header.home-navbar  
+  div.home-dropdown 
+  div.home-dropdown-dropdown a svg {
+    margin-right: 1rem;
+  }
+
+main.home-container 
+  header.home-navbar  
+  div.home-dropdown 
+  div.home-dropdown-dropdown button {
+    display: flex;
+    align-items: center;
+
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 2.4rem, 3rem);
+    font-weight: 700;
+
+    border: none;
+    background: transparent;
+  }
+
+main.home-container 
+  header.home-navbar  
+  div.home-dropdown 
+  div.home-dropdown-dropdown button svg {
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+main.home-container 
+  header.home-navbar  
+  div.home-dropdown button {
+    background: transparent;
+    border: none;
+
+    transition: 200ms;
+  }
+
+main.home-container 
+  header.home-navbar  
+  div.home-dropdown button svg {
+    width: 5rem;
+    height: 5rem;
+  }
+
+main.home-container 
+  section.home-festas {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.home-container 
+  section.home-festas
+  div.home-festas-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 3rem 0;
+}
+
+main.home-container 
+  section.home-festas
+  div.home-festas-header h1 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(3rem, 6vh, 6rem);
+
+    margin-bottom: 1rem;
+  }
+
+main.home-container 
+  section.home-festas
+  div.home-festas-header a {
+    text-decoration: none;
+
+    background: var(--secondary-color);
+    border-radius: 1rem;
+
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+
+    font-family: "Anton", sans-serif;
+    font-size: clamp(1.5rem, 4vh, 3rem);
+    font-weight: 700;
+
+    transition: 200ms;
+  }
+
+main.home-container 
+  section.home-festas
+  div.home-festas-header a svg {
+    margin-right: 1rem;
+
+    width: 3rem;
+    height: 3rem;
+}
+
+main.home-container 
+  section.home-festas
+  div.home-festas-cards {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+  }
+
+main.home-container 
+  section.home-festas
+  div.home-festas-cards ul {
+    width: 85%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+
+    list-style: none;
+}
+
+main.home-container 
+  section.home-festas
+  div.home-festas-cards ul li {
+    background: #fff;
+
+    border-radius: 2rem 2rem 0 0;
+
+    transition: 200ms;
+}
+
+main.home-container 
+  section.home-festas
+  div.home-festas-cards ul li a {
+    text-decoration: none;
+}
+
+main.home-container 
+  section.home-festas
+  div.home-festas-cards ul li img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 2rem 2rem 0 0;
+  }
+
+main.home-container 
+  section.home-festas
+  div.home-festas-cards ul li a p {
+    font-size: clamp(1rem, 2.4vh, 1.7rem);
+    margin: .5rem 1rem;
+}
+
+main.home-container 
+  section.home-festas
+  div.home-festas-cards ul li button {
+    width: 100%;
+    height: 3rem;
+
+    border: none;
+    background: transparent;
+
+    margin-top: .5rem;
+}
+
+@media (min-width: 1024px){
+  main.home-container 
+    header.home-navbar {
+      height: 30vh;
+      padding: 0 5rem;
+  }
+
+  main.home-container 
+    header.home-navbar 
+    div.home-navbar-title {
+      display: flex;
+      flex-direction: initial;
+
+      align-items: center;
+      justify-content: space-between;
+  }   
+
+  main.home-container 
+    header.home-navbar 
+    div.home-navbar-title h1 {
+      font-size: clamp(5rem, 11.5vh, 9rem);
+  }
+
+  main.home-container 
+    header.home-navbar 
+    div.home-navbar-title p {
+      font-size: clamp(2rem, 4vh, 4rem);
+      margin-right: 5rem;
+  }
+
+  main.home-container 
+    header.home-navbar  
+    div.home-dropdown 
+    div.home-dropdown-dropdown {
+      top: 20%;
+  }
+
+  main.home-container 
+    header.home-navbar  
+    div.home-dropdown button svg {
+      width: 7rem;
+      height: 7rem;
+  }
+
+  main.home-container 
+    section.home-festas
+    div.home-festas-header {
+      width: 100%;
+
+      flex-direction: initial;
+      justify-content: space-between;
+
+      padding: 0 5rem;
+
+      margin: 5rem 0;
+  }
+
+  main.home-container 
+    section.home-festas
+    div.home-festas-header h1 {
+      font-size: clamp(5rem, 9vh, 7rem);
+    }
+
+  main.home-container 
+    section.home-festas
+    div.home-festas-cards ul {
+      width: 85%;
+  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 3rem;
+  
+      list-style: none;
+  }
+
+  main.home-container 
+    section.home-festas
+    div.home-festas-cards ul li img {
+      height: 30rem;
+    }
+}

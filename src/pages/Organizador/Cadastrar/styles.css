@@ -1,0 +1,208 @@
+#user-cadastrar-background {
+  background: linear-gradient(90deg, var(--primary-color) 1.2%, var(--primary-light-color) 98.66%);
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+main.user-cadastrar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.user-cadastrar-container section.user-cadastrar-ambiente {
+  display: none;
+}
+
+main.user-cadastrar-container section.user-cadastrar-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.user-cadastrar-container section.user-cadastrar-form h1 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(3.6rem, 7vh, 6rem);
+
+  margin-top: 3rem;
+}
+
+main.user-cadastrar-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main.user-cadastrar-container
+  section.user-cadastrar-form
+  div.user-cadastrar-group-inputs {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 1rem;
+}
+
+main.user-cadastrar-container
+  section.user-cadastrar-form
+  div.user-cadastrar-group-inputs
+  div.user-cadastrar-input {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+main.user-cadastrar-container
+  section.user-cadastrar-form
+  div.user-cadastrar-group-inputs
+  div.user-cadastrar-input
+  label {
+  background: #ffffff;
+
+  height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  box-shadow: var(--shadow-input);
+}
+
+main.user-cadastrar-container
+  section.user-cadastrar-form
+  div.user-cadastrar-group-inputs
+  div.user-cadastrar-input
+  button.user-cadastrar-eye-btn {
+  width: 4rem;
+  height: 4.5rem;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+  border: none;
+  box-shadow: var(--shadow-input);
+}
+
+main.user-cadastrar-container
+  section.user-cadastrar-form
+  div.user-cadastrar-group-inputs
+  div.user-cadastrar-input
+  button.user-cadastrar-eye-btn
+  #user-cadastrar-eye-senha {
+  display: none;
+}
+
+main.user-cadastrar-container
+  section.user-cadastrar-form
+  div.user-cadastrar-group-inputs
+  div.user-cadastrar-input
+  button.user-cadastrar-eye-btn
+  #user-cadastrar-eye-consfirmar-senha {
+  display: none;
+}
+
+main.user-cadastrar-container section.user-cadastrar-form form > button {
+  width: 95%;
+  height: 7rem;
+
+  font: 700 4rem "Anton", sans-serif;
+  text-align: center;
+
+  border: none;
+  border-radius: 0.8rem;
+  margin: 3rem 0;
+
+  background: var(--secondary-color);
+
+  transition: 200ms;
+}
+
+main.user-cadastrar-container section.user-cadastrar-form form > button:hover {
+  background: var(--secondary-light-color);
+}
+
+main.user-cadastrar-container section.user-cadastrar-form p {
+  font: 400 1.8rem "Source Code Pro", sans-serif;
+
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+main.user-cadastrar-container section.user-cadastrar-form p a {
+  background: initial;
+
+  font: 700 2rem "Source Code Pro", sans-serif;
+  color: var(--secondary-color);
+  text-decoration: underline;
+
+  transition: 200ms;
+}
+
+main.user-cadastrar-container section.user-cadastrar-form p a:hover {
+  color: var(--secondary-light-color);
+}
+
+@media (min-width: 1024px) {
+  main.user-cadastrar-container section.user-cadastrar-ambiente {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 5rem;
+  }
+
+  main.user-cadastrar-container
+    section.user-cadastrar-ambiente
+    img.user-cadastrar-img {
+    width: 80%;
+    height: 100%;
+  }
+
+  main.user-cadastrar-container section.user-cadastrar-ambiente h1 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(3rem, 7vh, 10rem);
+
+    text-align: center;
+  }
+
+
+  main.user-cadastrar-container section.user-cadastrar-form form {
+    margin-right: 3rem;
+  }
+
+  main.user-cadastrar-container
+    section.user-cadastrar-form
+    div.user-cadastrar-group-inputs {
+    flex-direction: initial;
+  }
+
+  main.user-cadastrar-container
+    section.user-cadastrar-form
+    div.user-cadastrar-group-inputs
+    #false {
+    margin-right: initial;
+  }
+
+  main.user-cadastrar-container
+    section.user-cadastrar-form
+    div.user-cadastrar-group-inputs
+    div.user-cadastrar-input:first-child {
+    margin-right: 2rem;
+  }
+}
+
+.swal2-popup {
+  font-size: initial;
+}

@@ -1,0 +1,235 @@
+#criar-evento-background {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+main.criar-evento-container {
+  height: 100vh;
+  width: 100%;
+}
+
+main.criar-evento-container header.criar-evento-navbar {
+  width: 100%;
+  height: 25vh;
+
+  display: flex;
+  align-items: center;
+
+  background: var(--background-navbar);
+  box-shadow: var(--shadow-navbar);
+
+  animation-delay: 200ms;
+}
+
+main.criar-evento-container header.criar-evento-navbar a {
+  margin-left: 5%;
+
+  transition: 200ms;
+}
+
+main.criar-evento-container header.criar-evento-navbar h1 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(4rem, 5vh, 4rem);
+  text-align: center;
+
+  margin-left: 3rem;
+}
+
+main.criar-evento-container section.criar-evento-card {
+  background: #fff;
+
+  margin: 5rem 2rem;
+
+  border-radius: 2rem 2rem 0 0;
+}
+
+main.criar-evento-container section.criar-evento-card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-upload {
+  width: 100%;
+  background: #fff;
+  border-radius: 3rem;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 2rem;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-input
+  div.criar-evento-input-horario {
+  display: flex;
+  align-items: center;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-input
+  input {
+  background: var(--fundo-color);
+  box-shadow: initial;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-input
+  span {
+  margin: 0 1rem;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-textarea
+  h2 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2rem, 5vh, 5rem);
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-textarea
+  textarea {
+  width: 85%;
+  margin: 0 3rem;
+  resize: none;
+  font: 400 1.8rem "Source Code Pro", sans-serif;
+  background: var(--fundo-color);
+  border: none;
+  padding: 2rem;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin: 3rem 0;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-btn
+  button {
+  height: 6rem;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2rem, 5vh, 4rem);
+
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--secondary-color);
+
+  margin: 0 0 3rem 0;
+  padding: 0 3rem;
+
+  transition: 200ms;
+}
+
+main.criar-evento-container
+  section.criar-evento-card
+  form
+  div.criar-evento-btn
+  button:hover {
+  background: var(--secondary-light-color);
+}
+
+@media (min-width: 1024px) {
+  main.criar-evento-container header.criar-evento-navbar {
+    height: 30vh;
+  }
+
+  main.criar-evento-container header.criar-evento-navbar h1 {
+    font-size: clamp(4rem, 5vh, 4rem);
+
+    margin-left: 3rem;
+  }
+
+  main.criar-evento-container section.criar-evento-card {
+    width: 40%;
+
+    position: relative;
+
+    top: -25%;
+    right: -50%;
+  }
+
+  main.criar-evento-container
+    section.criar-evento-card
+    form
+    div.criar-evento-localizacao {
+    display: flex;
+    align-items: center;
+  }
+
+  main.criar-evento-container
+    section.criar-evento-card
+    form
+    div.criar-evento-localizacao
+    div.criar-evento-input {
+    width: 100%;
+  }
+
+  main.criar-evento-container
+    section.criar-evento-card
+    form
+    div.criar-evento-localizacao
+    div
+    + div.criar-evento-input {
+    width: 35%;
+
+    margin-left: 0;
+  }
+
+  main.criar-evento-container
+    section.criar-evento-card
+    form
+    div.criar-evento-input
+    span {
+    margin: 0 4rem;
+  }
+
+  main.criar-evento-container
+    section.criar-evento-card
+    form
+    div.criar-evento-btn
+    button {
+    height: 7rem;
+  }
+}

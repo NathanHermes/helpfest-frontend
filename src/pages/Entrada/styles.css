@@ -1,0 +1,116 @@
+#entrada-background {
+  background: linear-gradient(180deg, var(--primary-color) 1.2%, var(--primary-light-color) 98.66%);
+  min-height: 100vh;
+
+  display: flex;
+}
+
+main.entrada-container {
+  margin: auto;
+  height: min(80%, 96.7rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main.entrada-container header {
+  display: flex;
+  flex-direction: column;
+
+  width: min(80%, 35rem);
+}
+
+main.entrada-container header img.entrada-people-img {
+  margin: 10% auto;
+
+  width: 100%;
+  animation-delay: 100ms;
+}
+
+main.entrada-container header img.titleHELPFSET {
+  margin: 0 auto;
+
+  width: 100%;
+
+  animation-delay: 200ms;
+}
+
+main.entrada-container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 8vh;
+}
+
+main.entrada-container section a {
+  height: 6rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--secondary-color);
+  border-radius: 1rem;
+
+  margin: 1rem;
+  padding: 0 3rem;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2rem, 4.5vh, 5rem);
+
+  text-align: center;
+  text-decoration: none;
+
+  transition: 200ms;
+}
+
+main.entrada-container section a:hover {
+  background: var(--secondary-light-color);
+}
+
+@media (min-width: 760px) {
+  main.entrada-container {
+    margin: 0 auto;
+  }
+  main.entrada-container header {
+    display: flex;
+    flex-direction: column;
+
+    width: min(80%, 80rem);
+  }
+
+  main.entrada-container header img.entrada-people-img {
+    margin: 0 auto;
+    margin-top: 0;
+
+    width: 90%;
+    animation-delay: 100ms;
+  }
+
+  main.entrada-container header img.titleHELPFSET {
+    margin: 5vh auto;
+
+    width: 70%;
+
+    animation-delay: 200ms;
+  }
+
+  main.entrada-container section {
+    flex-direction: initial;
+
+    margin-top: initial;
+  }
+
+  main.entrada-container section a {
+    height: 7rem;
+
+    padding: 0 5rem;
+
+    transition: 200ms;
+  }
+}

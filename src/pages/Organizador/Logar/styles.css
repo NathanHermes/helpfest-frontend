@@ -1,0 +1,180 @@
+#user-logar-background {
+  background: linear-gradient(90deg, var(--primary-color) 1.2%, var(--primary-light-color) 98.66%);
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+main.user-logar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.user-logar-container section.user-logar-ambiente {
+  display: none;
+}
+
+main.user-logar-container section.user-logar-form {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 2rem;
+}
+
+main.user-logar-container section.user-logar-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.user-logar-container section.user-logar-form form h1 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(3.6rem, 7vh, 6rem);
+
+  animation-delay: 150ms;
+}
+
+main.user-logar-container
+  section.user-logar-form
+  form
+  div.user-logar-group-input {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin: 1rem 0;
+}
+
+main.user-logar-container
+  section.user-logar-form
+  form
+  div.user-logar-group-input
+  label {
+  height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+
+  padding: 1rem;
+
+  background: #ffffff;
+  box-shadow: var(--shadow-input);
+}
+
+main.user-logar-container
+  section.user-logar-form
+  form
+  div.user-logar-group-input
+  button.user-logar-btn-eye {
+  height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+
+  padding: 1rem;
+
+  background: #ffffff;
+  box-shadow: var(--shadow-input);
+  border: none;
+}
+
+main.user-logar-container
+  section.user-logar-form
+  form
+  div.user-logar-group-input
+  button.user-logar-btn-eye
+  #user-logar-eye {
+  display: none;
+}
+
+main.user-logar-container section.user-logar-form form div.user-logar-checkbox {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin: 1rem 0;
+}
+
+main.user-logar-container
+  section.user-logar-form
+  form
+  div.user-logar-checkbox
+  input {
+  width: 2rem;
+  height: 2rem;
+
+  margin: 0 2rem 0 1rem;
+}
+
+main.user-logar-container section.user-logar-form form button.user-logar-btn {
+  width: 100%;
+  height: 7rem;
+
+  font: 400 4rem "Anton", sans-serif;
+
+  border: none;
+  border-radius: 0.8rem;
+  background: var(--secondary-color);
+
+  margin: 2rem 0;
+
+  transition: 200ms;
+}
+
+main.user-logar-container section.user-logar-form form > p {
+  margin: 2rem 0;
+
+  text-align: center;
+}
+
+main.user-logar-container section.user-logar-form form > p a {
+  color: var(--secondary-color);
+  font-weight: 700;
+
+  transition: 200ms;
+}
+
+main.user-logar-container section.user-logar-form form > p a:hover {
+  color: var(--secondary-light-color);
+}
+
+@media (min-width: 1024px) {
+    main.user-logar-container section.user-logar-ambiente {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0 5rem;
+    }
+
+    main.user-logar-container section.user-logar-ambiente img.user-logar-img {
+        width: 80%;
+        height: 100%;
+    }
+
+    main.user-logar-container section.user-logar-ambiente h1 {
+        font-family: "Anton", sans-serif;
+        font-size: clamp(3rem, 7vh, 10rem);
+
+        text-align: center;
+    }
+
+    main.user-logar-container
+        section.user-logar-form
+        form
+        button.user-logar-btn:hover {
+        background: var(--secondary-light-color);
+    }
+}
+
+.swal2-popup {
+  font-size: initial;
+}

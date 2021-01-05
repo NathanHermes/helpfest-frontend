@@ -1,0 +1,223 @@
+#alterar-evento-background {
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+main.alterar-evento-container {
+  width: 100%;
+  height: 100vh;
+}
+
+main.alterar-evento-container header.alterar-evento-navbar {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(-90deg, #80b2f2 1.2%, #b4e4ff 98.66%);
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(76, 132, 191, 0.3);
+
+  animation-delay: 200ms;
+}
+
+main.alterar-evento-container header.alterar-evento-navbar a {
+  margin-left: 5%;
+
+  transition: 200ms;
+}
+
+main.alterar-evento-container header.alterar-evento-navbar h1 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(4rem, 5vh, 4rem);
+  text-align: center;
+
+  margin-left: 3rem;
+}
+
+main.alterar-evento-container section.alterar-evento-card {
+  background: #fff;
+
+  margin: 5rem 2rem;
+
+  border-radius: 2rem 2rem 0 0;
+}
+
+main.alterar-evento-container section.alterar-evento-card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-upload {
+  width: 100%;
+  background: #fff;
+  border-radius: 3rem;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-group-input {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 2rem;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-group-input
+  h2 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2rem, 5vh, 4rem);
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-group-input
+  div.alterar-evento-input {
+  display: flex;
+  align-items: center;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-group-input
+  div.alterar-evento-input
+  input {
+  background: #f0f2f5;
+  box-shadow: initial;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-group-input
+  div.alterar-evento-input
+  span {
+  font-weight: 700;
+  margin: 0 1.5rem;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-group-input
+  div.alterar-evento-textarea {
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 2rem;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-group-input
+  div.alterar-evento-textarea
+  textarea {
+  width: 100%;
+
+  background: #f0f2f5;
+  border: none;
+
+  resize: none;
+
+  padding: 1.5rem;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-btn {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-btn
+  button {
+  width: 80%;
+  height: 6rem;
+  margin: 0 2rem;
+
+  background: #f27294;
+  border: none;
+  border-radius: 0.5rem;
+
+  font: 400 2.6rem "Anton", sans-serif;
+
+  transition: 200ms;
+}
+
+@media (min-width: 1024px) {
+  main.alterar-evento-container header.alterar-evento-navbar {
+    height: 30vh;
+  }
+
+  main.alterar-evento-container header.alterar-evento-navbar h1 {
+    font-size: clamp(4rem, 7vh, 6rem);
+
+    margin-left: 5rem;
+  }
+
+  main.alterar-evento-container section.alterar-evento-card {
+    width: 40%;
+
+    position: relative;
+
+    top: -25%;
+    right: -50%;
+  }
+
+  main.alterar-evento-container
+    section.alterar-evento-card
+    form
+    div.alterar-evento-group-input-localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main.alterar-evento-container
+    section.alterar-evento-card
+    form
+    div.alterar-evento-group-input-localizacao
+    div.alterar-evento-group-input {
+        width: 100%;
+    }
+
+  main.alterar-evento-container
+    section.alterar-evento-card
+    form
+    div.alterar-evento-group-input-localizacao
+    div
+    + div.alterar-evento-group-input {
+    width: 25%;
+
+    margin-left: 0;
+  }
+
+  main.alterar-evento-container
+  section.alterar-evento-card
+  form
+  div.alterar-evento-btn
+  button:hover {
+    background: #FFA4C4;
+    }
+}

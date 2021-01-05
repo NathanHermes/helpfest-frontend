@@ -1,0 +1,209 @@
+#user-background {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+main.user-container {
+  width: 100%;
+  height: 100vh;
+}
+
+main.user-container header.user-navbar {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+
+  background: var(--background-navbar);
+  box-shadow: var(--shadow-navbar);
+
+  animation-delay: 200ms;
+}
+
+main.user-container header.user-navbar a {
+  margin-left: 5%;
+
+  transition: 200ms;
+}
+
+main.user-container header.user-navbar h1 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(4rem, 5vh, 4rem);
+  text-align: center;
+
+  margin-left: 3rem;
+}
+
+main.user-container section.user-card {
+  background: #fff;
+
+  margin: 5rem 2rem;
+
+  border-radius: 2rem 2rem 0 0;
+}
+
+main.user-container section.user-card div.user-card-header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+main.user-container section.user-card div.user-card-header img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  margin: 2rem 0;
+}
+
+main.user-container
+  section.user-card
+  div.user-card-header
+  div.user-card-header-descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+main.user-container
+  section.user-card
+  div.user-card-header
+  div.user-card-header-descricao
+  h1 {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2rem, 5vh, 5rem);
+}
+
+main.user-container section.user-card div.user-card-descricao {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+
+  padding: 1rem;
+}
+
+main.user-container section.user-card div.user-card-descricao ul {
+  list-style: square;
+
+  padding-left: 1rem;
+}
+
+main.user-container section.user-card div.user-card-descricao ul li {
+  margin-bottom: 0.5rem;
+}
+
+main.user-container section.user-card div.user-card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+main.user-container section.user-card div.user-card-footer a {
+  width: 50%;
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2rem, 4vh, 4rem);
+
+  background: var(--secondary-color);
+  border-radius: 0.5rem;
+
+  text-decoration: none;
+
+  margin: 1rem 1rem 3rem 1rem;
+
+  transition: 200ms;
+}
+
+main.user-container section.user-card div.user-card-footer a:hover {
+  background: var(--secondary-light-color);
+}
+
+main.user-container section.user-card div.user-card-footer button {
+  width: 50%;
+  height: 5rem;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2rem, 4vh, 4rem);
+
+  background: var(--secondary-color);
+
+  border: none;
+  border-radius: 0.5rem;
+
+  margin: 1rem 1rem 3rem 1rem;
+
+  transition: 200ms;
+}
+
+main.user-container section.user-card div.user-card-footer button:hover {
+  background: var(--secondary-light-color);
+}
+
+@media (min-width: 1024px) {
+  main.user-container header.user-navbar {
+    height: 30vh;
+  }
+
+  main.user-container header.user-navbar h1 {
+    font-size: clamp(4rem, 7vh, 6rem);
+
+    margin-left: 5rem;
+  }
+
+  main.user-container section.user-card {
+    width: 50%;
+
+    position: relative;
+
+    top: -25%;
+    right: -40%;
+  }
+
+  main.user-container section.user-card div.user-card-header {
+    flex-direction: initial;
+
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  main.user-container section.user-card div.user-card-header img {
+    margin: 2rem 4rem 2rem 0;
+  }
+
+  main.user-container
+    section.user-card
+    div.user-card-header
+    div.user-card-header-descricao {
+    align-items: flex-start;
+  }
+
+  main.user-container section.user-card div.user-card-descricao {
+    justify-content: initial;
+
+    margin: 2rem 0;
+  }
+
+  main.user-container section.user-card div.user-card-descricao ul {
+    padding-left: 4rem;
+  }
+
+  main.user-container section.user-card div.user-card-footer a {
+    width: 30%;
+    height: 6rem;
+  }
+
+  main.user-container section.user-card div.user-card-footer button {
+    width: 30%;
+    height: 6rem;
+  }
+}
