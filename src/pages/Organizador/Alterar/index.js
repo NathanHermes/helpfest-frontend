@@ -136,6 +136,9 @@ export default function AlterarPerfil() {
       data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
     }
 
+    const imgurFile = new FormData();
+    imgurFile.append("image", uploadedFiles[0].file);
+
     try {
       var imgURL = "";
       await fetch("https://api.imgur.com/3/image/", {
