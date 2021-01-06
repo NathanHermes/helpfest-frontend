@@ -3,11 +3,7 @@ import 'react-circular-progressbar/dist/styles.css';
 
 import { Container, FileInfo, Preview } from "./styles";
 
-
-
 const FileList = ({ files, onDelete }) => (
-  
-
   <Container>
     { files.map(uploadedFiles => (
       <li key={uploadedFiles.id}>

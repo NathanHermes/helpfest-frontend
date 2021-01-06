@@ -151,6 +151,7 @@ export default function Home() {
               {eventos.map((evento) => (
                 <li key={evento.id} className="mouse-hover">
                   <Link to={`/eventos/detalhes/${evento.id}`}>
+                    
                     <img src={evento.url} className="home-img-festa" alt="" />
                     <p>
                       <strong>{evento.nome_festa}</strong> - {evento.data_festa}

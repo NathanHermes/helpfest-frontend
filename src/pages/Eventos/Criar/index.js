@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { uniqueId } from "lodash";
 import filesize from "filesize";
+import { uniqueId } from "lodash";
 import api from "../../../services/api";
 import Dropzone from "react-dropzone";
-import { DropContainer, UploadMessage } from "../../../components/Upload/styles";
+import {
+  DropContainer,
+  UploadMessage,
+} from "../../../components/Upload/styles";
 import FileList from "../../../components/FileList";
 
 import { BsArrowLeftShort } from "react-icons/bs";
@@ -24,22 +27,9 @@ export default function CriarEvento() {
     return (
       <UploadMessage type="success">Solte os aquivos aqui ...</UploadMessage>
     );
-  }
+  };
 
   const [uploadedFiles, setUploadedFiles] = useState([]);
-
-  const [nome_festa, setNomeFesta] = useState("");
-  const [dataEvento, setDataEvento] = useState("");
-  const [horario_inicio, setHorarioInicio] = useState("");
-  const [horario_fim, setHorarioFim] = useState("");
-  const [rua, setRua] = useState("");
-  const [numero, setNumero] = useState("");
-  const [cidade, setCidade] = useState("");
-  const [uf, setUf] = useState("");
-  const [convidados, setConvidados] = useState("");
-  const [outros, setOutros] = useState("");
-
-  const history = useHistory();
 
   const handleUpload = (files) => {
     const uploadedFile = files.map((file) => ({
@@ -51,7 +41,7 @@ export default function CriarEvento() {
       progress: 0,
       uploaded: false,
       error: false,
-      url: null,
+      url: false,
     }));
 
     setUploadedFiles(uploadedFiles.concat(uploadedFile));
@@ -60,6 +50,20 @@ export default function CriarEvento() {
   const handleDelete = async (id) => {
     setUploadedFiles(uploadedFiles.filter((file) => file.id !== id));
   };
+
+  const [nome_festa, setNomeFesta] = useState("");
+  const [dataEvento, setDataEvento] = useState("");
+  const [horario_inicio, setHorarioInicio] = useState("");
+  const [horario_fim, setHorarioFim] = useState("");
+  const [rua, setRua] = useState("");
+  const [numero, setNumero] = useState("");
+  const [cidade, setCidade] = useState("");
+  const [uf, setUf] = useState("");
+  const [convidados, setConvidados] = useState("");
+  const [outros, setOutros] = useState("");
+  
+
+  const history = useHistory();
 
   const handleCriarEvento = async (e) => {
     e.preventDefault();
@@ -79,31 +83,51 @@ export default function CriarEvento() {
       email = sessionStorage.getItem("email");
     }
 
-    const parsedDate = parseISO(dataEvento);
+    var data_festa = "";
 
-    const data_festa = format(parsedDate, "dd/MM/yyyy");
+    if(dataEvento !== "") {
+      const parsedDate = parseISO(dataEvento);
+
+      data_festa = format(parsedDate, "dd/MM/yyyy");
+    }
 
     const data = new FormData();
 
-    data.append('nome_festa', nome_festa);
-    data.append('data_festa', data_festa);
-    data.append('horario_inicio', horario_inicio);
-    data.append('horario_fim', horario_fim);
-    data.append('convidados', convidados);
-    data.append('outros', outros);
-    data.append('rua', rua);
-    data.append('numero', numero);
-    data.append('cidade', cidade);
-    data.append('uf', uf);
+    data.append("nome_festa", nome_festa);
+    data.append("data_festa", data_festa);
+    data.append("horario_inicio", horario_inicio);
+    data.append("horario_fim", horario_fim);
+    data.append("convidados", convidados);
+    data.append("outros", outros);
+    data.append("rua", rua);
+    data.append("numero", numero);
+    data.append("cidade", cidade);
+    data.append("uf", uf);
 
-    data.append('file', uploadedFiles[0].file, uploadedFiles[0].name);
+    data.append("file", uploadedFiles[0].file, uploadedFiles[0].nome);
+
+    const imgurFile = new FormData();
+    
+    imgurFile.append("image", uploadedFiles[0].file);
 
     try {
-      await api.post("/festa/create", data,{
+
+      var imgURL = "";
+      await fetch("https://api.imgur.com/3/image/", {
+        method: "post",
+        headers: {
+          Authorization: "Client-ID 6563c4d48628124",
+        },
+        body: imgurFile,
+      }).then(imgur => imgur.json()
+        .then(imgur => {imgURL = imgur.data.link}));
+
+      data.append("imgurURL" , imgURL);
+
+      await api.post("/festa/create", data, {
         headers: {
           Authorization: email,
         },
-  
       });
 
       Swal.fire({
@@ -124,7 +148,7 @@ export default function CriarEvento() {
         confirmButtonColor: "#4C83BF",
       });
     }
-  }
+  };
 
   return (
     <div id="criar-evento-background">
@@ -192,7 +216,10 @@ export default function CriarEvento() {
 
             <div className="criar-evento-input">
               <strong htmlFor="criar-evento-horario">Horário: </strong>
-              <div className="criar-evento-input-horario" id="criar-evento-horario">
+              <div
+                className="criar-evento-input-horario"
+                id="criar-evento-horario"
+              >
                 <input
                   id="horario-inicio"
                   type="time"
@@ -260,7 +287,9 @@ export default function CriarEvento() {
             </div>
 
             <div className="criar-evento-input">
-              <strong htmlFor="criar-evento-celebridades">Celebridades: </strong>
+              <strong htmlFor="criar-evento-celebridades">
+                Celebridades:{" "}
+              </strong>
               <input
                 id="criar-evento-celebridades"
                 type="text"
