@@ -163,6 +163,18 @@ export default function AlterarEvento() {
     }
 
     try {
+      var imgURL = "";
+      await fetch("https://api.imgur.com/3/image/", {
+        method: "post",
+        headers: {
+          Authorization: "Client-ID 6563c4d48628124",
+        },
+        body: imgurFile,
+      }).then(imgur => imgur.json()
+        .then(imgur => {imgURL = imgur.data.link}));
+
+      data.append("imgurURL" , imgURL);
+
       await api.put(`/festa/update/${id}`, data, {
         headers: {
           Authorization: email,
