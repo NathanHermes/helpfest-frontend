@@ -133,6 +133,7 @@ export default function AlterarPerfil() {
     }
 
     const imgurFile = new FormData();
+
     if (uploadedFiles.length !== 0) {
       data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
 
