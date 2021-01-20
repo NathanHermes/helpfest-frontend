@@ -158,26 +158,23 @@ export default function AlterarEvento() {
       data.append("uf", uf);
     }
 
-    if (uploadedFiles.length !== 0) {
-      data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
-    }
-
-    const imgurFile = new FormData();
-    imgurFile.append("image", uploadedFiles[0].file);
-
     try {
-      var imgURL = "";
-      await fetch("https://api.imgur.com/3/image/", {
-        method: "post",
-        headers: {
-          Authorization: "Client-ID 6563c4d48628124",
-        },
-        body: imgurFile,
-      }).then(imgur => imgur.json()
-        .then(imgur => {imgURL = imgur.data.link}));
+      if (uploadedFiles.length !== 0) {
+        data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
+        const imgurFile = new FormData();
+        imgurFile.append("image", uploadedFiles[0].file);
+          var imgURL = "";
+          await fetch("https://api.imgur.com/3/image/", {
+            method: "post",
+            headers: {
+              Authorization: "Client-ID 6563c4d48628124",
+            },
+            body: imgurFile,
+          }).then(imgur => imgur.json()
+            .then(imgur => {imgURL = imgur.data.link}));
 
-      data.append("imgurURL" , imgURL);
-
+          data.append("imgurURL" , imgURL);
+        }
       await api.put(`/festa/update/${id}`, data, {
         headers: {
           Authorization: email,
