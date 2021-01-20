@@ -8,7 +8,10 @@ import Swal from "sweetalert2";
 import { parseISO, format } from "date-fns";
 
 import Dropzone from "react-dropzone";
-import { DropContainer, UploadMessage } from "../../../components/Upload/styles";
+import {
+  DropContainer,
+  UploadMessage,
+} from "../../../components/Upload/styles";
 import FileList from "../../../components/FileList";
 
 import "./styles.css";
@@ -158,23 +161,31 @@ export default function AlterarEvento() {
       data.append("uf", uf);
     }
 
+    const imgurFile = new FormData();
+
+    if (uploadedFiles.length !== 0) {
+      data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
+      imgurFile.append("image", uploadedFiles[0].file);
+    }
+
     try {
       if (uploadedFiles.length !== 0) {
-        data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
-        const imgurFile = new FormData();
-        imgurFile.append("image", uploadedFiles[0].file);
-          var imgURL = "";
-          await fetch("https://api.imgur.com/3/image/", {
-            method: "post",
-            headers: {
-              Authorization: "Client-ID 6563c4d48628124",
-            },
-            body: imgurFile,
-          }).then(imgur => imgur.json()
-            .then(imgur => {imgURL = imgur.data.link}));
+        var imgURL = "";
+        await fetch("https://api.imgur.com/3/image/", {
+          method: "post",
+          headers: {
+            Authorization: "Client-ID 6563c4d48628124",
+          },
+          body: imgurFile,
+        }).then((imgur) =>
+          imgur.json().then((imgur) => {
+            imgURL = imgur.data.link;
+          })
+        );
 
-          data.append("imgurURL" , imgURL);
-        }
+        data.append("imgurURL", imgURL);
+      }
+      
       await api.put(`/festa/update/${id}`, data, {
         headers: {
           Authorization: email,
@@ -373,9 +384,14 @@ export default function AlterarEvento() {
                     onChange={(e) => setRua(e.target.value)}
                     disabled
                   />
-                  <button type="button" className="btn-editar"id="evento-rua" onClick={handleInput}>
+                  <button
+                    type="button"
+                    className="btn-editar"
+                    id="evento-rua"
+                    onClick={handleInput}
+                  >
                     <BsPencil
-                      id="evento-rua"                    
+                      id="evento-rua"
                       color="rgba(255, 164, 196, 1)"
                       size={25}
                     />
@@ -394,7 +410,12 @@ export default function AlterarEvento() {
                     onChange={(e) => setNumero(e.target.value)}
                     disabled
                   />
-                  <button type="button" className="btn-editar"id="evento-numero" onClick={handleInput}>
+                  <button
+                    type="button"
+                    className="btn-editar"
+                    id="evento-numero"
+                    onClick={handleInput}
+                  >
                     <BsPencil
                       id="evento-numero"
                       color="rgba(255, 164, 196, 1)"
@@ -417,7 +438,12 @@ export default function AlterarEvento() {
                     onChange={(e) => setCidade(e.target.value)}
                     disabled
                   />
-                  <button type="button" className="btn-editar"id="evento-cidade" onClick={handleInput}>
+                  <button
+                    type="button"
+                    className="btn-editar"
+                    id="evento-cidade"
+                    onClick={handleInput}
+                  >
                     <BsPencil
                       id="evento-cidade"
                       color="rgba(255, 164, 196, 1)"
@@ -438,7 +464,12 @@ export default function AlterarEvento() {
                     onChange={(e) => setUf(e.target.value)}
                     disabled
                   />
-                  <button type="button" className="btn-editar"id="evento-uf" onClick={handleInput}>
+                  <button
+                    type="button"
+                    className="btn-editar"
+                    id="evento-uf"
+                    onClick={handleInput}
+                  >
                     <BsPencil
                       id="evento-uf"
                       color="rgba(255, 164, 196, 1)"
@@ -490,7 +521,12 @@ export default function AlterarEvento() {
                   onChange={(e) => setOutros(e.target.value)}
                   disabled
                 ></textarea>
-                <button type="button" className="btn-editar" id="evento-outros" onClick={handleInput}>
+                <button
+                  type="button"
+                  className="btn-editar"
+                  id="evento-outros"
+                  onClick={handleInput}
+                >
                   <BsPencil
                     id="evento-outros"
                     color="rgba(255, 164, 196, 1)"

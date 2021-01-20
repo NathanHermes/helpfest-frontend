@@ -13,7 +13,6 @@ const FileList = ({ files, onDelete }) => (
             <strong>{uploadedFiles.name}</strong>
             <span>
               {uploadedFiles.readableSize} 
-              <button type="button" onClick={() => onDelete(uploadedFiles.id)}>Excluir</button>
             </span>
           </div>
         </FileInfo>

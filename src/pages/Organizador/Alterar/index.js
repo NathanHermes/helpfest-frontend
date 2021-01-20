@@ -132,25 +132,27 @@ export default function AlterarPerfil() {
       data.append("uf", uf);
     }
 
+    const imgurFile = new FormData();
     if (uploadedFiles.length !== 0) {
       data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
+
+      imgurFile.append("image", uploadedFiles[0].file);
     }
 
-    const imgurFile = new FormData();
-    imgurFile.append("image", uploadedFiles[0].file);
-
     try {
-      var imgURL = "";
-      await fetch("https://api.imgur.com/3/image/", {
-        method: "post",
-        headers: {
-          Authorization: "Client-ID 6563c4d48628124",
-        },
-        body: imgurFile,
-      }).then(imgur => imgur.json()
-        .then(imgur => {imgURL = imgur.data.link}));
+      if(uploadedFiles.length !== 0) {
+        var imgURL = "";
+        await fetch("https://api.imgur.com/3/image/", {
+          method: "post",
+          headers: {
+            Authorization: "Client-ID 6563c4d48628124",
+          },
+          body: imgurFile,
+        }).then(imgur => imgur.json()
+          .then(imgur => {imgURL = imgur.data.link}));
 
-      data.append("imgurURL" , imgURL);
+        data.append("imgurURL" , imgURL);
+      }
 
       await api.put("/organizador/update", data, {
         headers: {
