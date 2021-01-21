@@ -136,7 +136,6 @@ export default function AlterarPerfil() {
 
     if (uploadedFiles.length !== 0) {
       data.append("file", uploadedFiles[0].file, uploadedFiles[0].name);
-
       imgurFile.append("image", uploadedFiles[0].file);
     }
 
