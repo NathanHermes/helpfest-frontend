@@ -104,7 +104,7 @@ export default function AlterarPerfil() {
         </header>
 
         <section className="alterar-user-card">
-          <form onSubmit={handleAlterarOrganizador}>
+          <form onSubmit={() => {}}>
             <div className="alterar-user-upload">
               {!!uploadedFiles.length || (
                 <Dropzone accept="image/*" onDropAccepted={handleUpload}>
