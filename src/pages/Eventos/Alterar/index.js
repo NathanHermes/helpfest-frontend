@@ -302,7 +302,7 @@ export default function AlterarEvento() {
                 <input
                   id="alterar-evento-data"
                   type="text"
-                  placeholder={festa.data_evento}
+                  placeholder={festa.data_festa}
                   value={dataEvento}
                   onChange={(e) => setDataEvento(e.target.value)}
                   disabled
