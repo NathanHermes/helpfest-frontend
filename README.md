@@ -4,7 +4,7 @@
   <h1>Helpfest</h1>
 </div>
 <p align="center">
-  Helpfest é um trabalho anual desenvolvido pelos alunos <a href="https://github.com/NathanHGS">Nathan Hermes</a> & <a href="https://github.com/PedroPiassi">Pedro                 Piassi</a>, estudantes do <a href="https://scl.ifsp.edu.br">Instituto Federal de São Paulo</a> sob a supervisão do professor Pedro Nobile.
+  Helpfest é um trabalho anual desenvolvido pelos alunos <a href="https://github.com/NathanHGS">Nathan Hermes</a> [Nathan](https://github.com) & <a href="https://github.com/PedroPiassi">Pedro                 Piassi</a>, estudantes do <a href="https://scl.ifsp.edu.br">Instituto Federal de São Paulo</a> sob a supervisão do professor Pedro Nobile.
 </p>
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/NathanHGS/helpfest-frontend)
