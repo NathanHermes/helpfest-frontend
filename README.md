@@ -1,4 +1,4 @@
-  <img align="center" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/public/favicon.ico" />
+  <img src="https://github.com/NathanHGS/helpfest-frontend/blob/main/public/favicon.ico" align="center" />
   
   <h1 align="center">HELPFEST</h1>
   
