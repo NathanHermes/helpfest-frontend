@@ -14,6 +14,6 @@
 * [Sobre](#Sobre)
 
 ### Sobre
-O Helpfest foi desenvolvido a partir da ideia de facilitar a divulgação de festas por meio de organizações privadas e publicas, além do acesso a essas festas por parte da população. Todo o projeto conta com um ![Front-end](https://github.com/NathanHGS/helpfest-frontend), um (Back-end)[https://github.com/NathanHGS/helpfest-backend "Backend"]
+O Helpfest foi desenvolvido a partir da ideia de facilitar a divulgação de festas por meio de organizações privadas e publicas, além do acesso a essas festas por parte da população. Todo o projeto conta com um [Front-end](https://github.com/NathanHGS/helpfest-frontend), um (Back-end)[https://github.com/NathanHGS/helpfest-backend "Backend"]
 
 readme em edição
