@@ -9,7 +9,7 @@
 
 ## Frontend da aplicação
 
-*[Sobre](#Sobre)
+* [Sobre](#Sobre)
 
 
 readme em edição
