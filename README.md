@@ -7,7 +7,7 @@
   Helpfest é um trabalho anual desenvolvido pelos alunos <a href="https://github.com/NathanHGS">Nathan Hermes</a> & <a href="https://github.com/PedroPiassi">Pedro                 Piassi</a>, estudantes do <a href="https://scl.ifsp.edu.br">Instituto Federal de São Paulo</a> sob a supervisão do professor Pedro Nobile.
 </p>
 
-![GitHub deployments](https://img.shields.io/github/deployments/NathanHGS/helpfest-frontend/frontend-helpfest)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/NathanHGS/helpfest-frontend)
 
 ## Frontend da aplicação
 
