@@ -105,7 +105,7 @@ export default function AlterarEvento() {
   async function handleAlterar(e) {
     e.preventDefault();
 
-    var data_evento = "";
+    var data_festa = "";
     const data = new FormData();
 
     if (nome_festa === "") {
@@ -115,8 +115,8 @@ export default function AlterarEvento() {
     }
     if (dataEvento !== "") {
       const parsedDate = parseISO(dataEvento);
-      setDataEvento(format(parsedDate, "dd/MM/yyyy"));
-      data.append("data_festa", dataEvento);
+      data_festa = format(parsedDate, "dd/MM/yyyy");
+      data.append("data_festa", data_festa);
     } else {
       data.append("data_festa", festa.data_festa);
     }
