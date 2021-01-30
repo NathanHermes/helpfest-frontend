@@ -50,6 +50,9 @@ export default function Perfil() {
               Authorization: email,
             },
           });
+          
+          localStorage.clear();
+          sessionStorage.clear();
 
           Swal.fire({
             position: "top-end",
