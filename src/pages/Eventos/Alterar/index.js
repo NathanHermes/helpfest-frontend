@@ -118,7 +118,7 @@ export default function AlterarEvento() {
       setDataEvento(format(parsedDate, "dd/MM/yyyy"));
       data.append("data_festa", dataEvento);
     } else {
-      data.append("data_festa", festa.data_evento);
+      data.append("data_festa", festa.data_festa);
     }
     if (horario_inicio === "") {
       data.append("horario_inicio", festa.horario_inicio);
