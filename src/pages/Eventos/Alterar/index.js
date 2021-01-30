@@ -115,8 +115,8 @@ export default function AlterarEvento() {
     }
     if (dataEvento !== "") {
       const parsedDate = parseISO(dataEvento);
-      data_evento = format(parsedDate, "dd/MM/yyyy");
-      data.append("data_festa", data_evento);
+      setDataEvento(format(parsedDate, "dd/MM/yyyy"));
+      data.append("data_festa", dataEvento);
     } else {
       data.append("data_festa", festa.data_evento);
     }
