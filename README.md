@@ -58,7 +58,14 @@ Segue algumas das telas do projeto:
 <br>
 <div align="center">
   <img alt="tela de entrada" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageEntrada.png">
-  <h3>Tela de entrada</h3>
+  <p><strong>Tela de entrada</strong></p>
+  <br>
+  <img alt="tela de home" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageHome.png">
+  <p><strong>Tela home</strong></p>
+  <br>
+  <img alt="tela de cadastro" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageDetalheEvento.png">
+  <p><strong>Tela de cadastro</strong></p>
+  <br>
 </div>  
 
 
