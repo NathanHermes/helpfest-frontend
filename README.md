@@ -33,10 +33,10 @@ Bem vindo ao front-end do Helpfest, essa parte da aplicação foi desenvolvido p
 Durante todo o desenvolvimento foram utilizadas as seguintes tecnologias:
 <p align="center">
   <a href="https://pt-br.reactjs.org" target="_blank">
-    <img alt="ReactJS" src="https://img.shields.io/badge/ReactJS-v%2017.0.1-%2361dbfb">
+    <img alt="ReactJS" src="https://img.shields.io/badge/ReactJS-v17.0.1-%2361dbfb">
   </a>
   <a href="https://reactnative.dev" target="_blank">
-    <img alt="React-Native" src="https://img.shields.io/badge/React--Native-v%200.63-%2361dbfb">
+    <img alt="React-Native" src="https://img.shields.io/badge/React--Native-v0.63-%2361dbfb">
   </a>
   <a href="https://nodejs.org/en/">
     <img alt="npm" src="https://img.shields.io/npm/v/node">
