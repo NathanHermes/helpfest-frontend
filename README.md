@@ -21,7 +21,7 @@ O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de 
 <br>
 
 ### SOBRE
-Status da produção: ✔️ CONCLUÍDO COM SUCESSO ✔️
+<strong align="center"> ✔️ CONCLUÍDO COM SUCESSO ✔️ </strong>
 
 O front-end foi desenvolvido para ter um layout simples, bonito, e totalmente responsivo, desde de smartphones até smart Tvs.
 <div align="center">
