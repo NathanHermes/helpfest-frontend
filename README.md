@@ -54,7 +54,7 @@ Após fazer o download do projeto, é necessário fazer a instalação de todas 
 
 ### DEMONSTRAÇÃO
 Segue abaixo algumas das telas do projeto:
-### Caso queira ver o projeto em funcionamento na integra acesse: [Helpfest](https://frontend-helpfest.herokuapp.com)
+#### Caso queira ver o projeto em funcionamento na integra acesse: [Helpfest](https://frontend-helpfest.herokuapp.com)
 <br>
 <div align="center">
   <img alt="tela de entrada" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageEntrada.png">
