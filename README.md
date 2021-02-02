@@ -53,10 +53,11 @@ Após fazer o download do projeto, é necessário fazer a instalação de todas 
 
 ### DEMONSTRAÇÃO
 Segue algumas das telas do projeto:
+<br>
 <div align="center">
   <img alt="tela de entrada" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageEntrada.png">
-  <p><strong>Tela de entrada</strong></p>
-<div>  
+  <h4>Tela de entrada</h4>
+</div>  
 
 
 readme em edição
