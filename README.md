@@ -14,6 +14,7 @@
     <img alt="npm" src="https://img.shields.io/npm/v/node">
   </a>
 </div> 
+<br>
 
 Helpfest é um trabalho anual desenvolvido pelos alunos [Nathan Hermes](https://github.com/NathanHGS) & [Pedro Piassi](https://github.com/PedroPiassi), estudantes do [Instituto Federal de São Paulo](https://scl.ifsp.edu.br) sob a supervisão do professor [Pedro Nobile](https://github.com/northonh).
 
