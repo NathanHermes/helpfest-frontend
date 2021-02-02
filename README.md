@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="#sobre">Sobre</a> •
-  <a href="#projeto">Projeto</a>
+  <a href="#">Status do projeto</a>
 </p> 
 
 ### Sobre
@@ -27,6 +27,9 @@ O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de 
   <img alt="React-Native" src="https://img.shields.io/badge/React--Native-%200.63-%2361dbfb">
 </a>.
 
-### Projeto
+### Status do projeto
+<p align="center"> ✔️ CONCLUÍDO COM SUCESSO ✔️ </p>
+
+### Instalação
 
 readme em edição
