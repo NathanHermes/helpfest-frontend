@@ -105,7 +105,7 @@ export default function AlterarEvento() {
   async function handleAlterar(e) {
     e.preventDefault();
 
-    var data_evento = "";
+    var data_festa = "";
     const data = new FormData();
 
     if (nome_festa === "") {
@@ -115,10 +115,10 @@ export default function AlterarEvento() {
     }
     if (dataEvento !== "") {
       const parsedDate = parseISO(dataEvento);
-      data_evento = format(parsedDate, "dd/MM/yyyy");
-      data.append("data_festa", data_evento);
+      data_festa = format(parsedDate, "dd/MM/yyyy");
+      data.append("data_festa", data_festa);
     } else {
-      data.append("data_festa", festa.data_evento);
+      data.append("data_festa", festa.data_festa);
     }
     if (horario_inicio === "") {
       data.append("horario_inicio", festa.horario_inicio);
