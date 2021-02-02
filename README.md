@@ -12,15 +12,17 @@
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/NathanHGS/helpfest-frontend">
 </div> 
 
+O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de festas/eventos, seja elas organizadas por instituições privadas ou publicas e garantir uma ampla divulgação além de facilitar o acesso a essas festas pela população. O projeto conta com um [Front-end](https://github.com/NathanHGS/helpfest-frontend) e um [Back-end](https://github.com/NathanHGS/helpfest-backend)  e um [Mobile](https://github.com/NathanHGS/helpfest-mobile).
+
 ## Frontend da aplicação
 
 <p align="center">
   <a href="#sobre">Sobre</a> •
-  <a href="#">Status do projeto</a>
+  <a href="#">Tecnologias</a>
 </p> 
 
 ### Sobre
-O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de festas/eventos, seja elas organizadas por instituições privadas ou publicas e garantir uma ampla divulgação além de facilitar o acesso a essas festas pela população. O projeto conta com um [Front-end](https://github.com/NathanHGS/helpfest-frontend) e um [Back-end](https://github.com/NathanHGS/helpfest-backend)  e um [Mobile](https://github.com/NathanHGS/helpfest-mobile) desenvolvido em .
+O front-end foi desenvolvido para ter um layout simples, bonito, e totalmente responsivo, desde de smartphones até smart Tvs.
 
 <p align="center"> ✔️ CONCLUÍDO COM SUCESSO ✔️ </p>
 
