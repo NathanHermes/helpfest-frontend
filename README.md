@@ -16,8 +16,8 @@ O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de 
 ## Frontend da aplicação
 <h3 align="center">
   <a href="#sobre">Sobre</a> •
-  <a href="#tecnologias">Instalação</a> •
-  <a href="#demonstracao">Demonstação</a>
+  <a href="#instalação">Instalação</a> •
+  <a href="#demonstração">Demonstação</a>
 </h3> 
 <br>
 
@@ -53,8 +53,8 @@ Após fazer o download do projeto, é necessário fazer a instalação de todas 
 <br>
 
 ### DEMONSTRAÇÃO
-Segue algumas das telas do projeto:
-
+Segue abaixo algumas das telas do projeto:
+#### Caso queira ver o projeto em funcionamento na integra acesse: [Helpfest](https://frontend-helpfest.herokuapp.com)
 <br>
 <div align="center">
   <img alt="tela de entrada" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageEntrada.png">
@@ -67,4 +67,4 @@ Segue algumas das telas do projeto:
   <p><strong>Tela de detalhe do evento</strong></p>
 </div>
 
-#### Para ver o projeto em funcionamento acesse: [Helpfest](https://frontend-helpfest.herokuapp.com)
+
