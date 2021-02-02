@@ -9,10 +9,9 @@
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/NathanHGS/helpfest-frontend">
 </div> 
 
-<p align="center">
-  Helpfest é um trabalho anual desenvolvido pelos alunos <a href="https://github.com/NathanHGS">Nathan Hermes</a> & <a href="https://github.com/PedroPiassi">Pedro                 Piassi</a>, estudantes do <a href="https://scl.ifsp.edu.br">Instituto Federal de São Paulo</a> sob a supervisão do professor <a href="https://github.com/northonh">Pedro Nobile</a>
+<p align="left">
+  Helpfest é um trabalho anual desenvolvido pelos alunos <a href="https://github.com/NathanHGS">Nathan Hermes</a> & <a href="https://github.com/PedroPiassi">Pedro                 Piassi</a>, estudantes do <a href="https://scl.ifsp.edu.br">Instituto Federal de São Paulo</a> sob a supervisão do professor <a href="https://github.com/northonh">Pedro Nobile</a>.
 </p>
-
 O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de festas/eventos, seja elas organizadas por instituições privadas ou publicas e garantir uma ampla divulgação além de facilitar o acesso a essas festas pela população. O projeto conta com um [Front-end](https://github.com/NathanHGS/helpfest-frontend) e um [Back-end](https://github.com/NathanHGS/helpfest-backend)  e um [Mobile](https://github.com/NathanHGS/helpfest-mobile).
 
 ## Frontend da aplicação
