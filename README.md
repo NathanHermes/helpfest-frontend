@@ -38,7 +38,7 @@ Bem vindo ao front-end do Helpfest, essa parte da aplicação foi desenvolvido p
 <br>
 
 ### INSTALAÇÃO
-Após fazer o download do projeto, é necessário fazer a instalação de todas as dependências do projeto. Para isso abra o terminal do seu computador vá até a pasta aonde estão os arquivos do projeto e execute o comando abaixo.
+Após fazer o download do front-end projeto, é necessário fazer a instalação de todas as dependências do front-end. Para isso abra o terminal do seu computador vá até a pasta aonde estão os arquivos do projeto e execute o comando abaixo.
 ```
   // powershell
   npm install
