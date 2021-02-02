@@ -26,7 +26,7 @@ O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de 
 
 Bem vindo ao front-end do Helpfest, essa parte da aplicação foi desenvolvido para ter um layout simples, bonito, e totalmente responsivo para a maioria das resoluções existentes. Vale resaltar que toda a parte do WEB foi desenvolvida com foco nas instituições organizadoras dos eventos e não para o uso da população. Para a população foi desenvolvido um [app mobile](https://github.com/NathanHGS/helpfest-mobile).
 <div align="center">
-  <img src="https://github.com/NathanHGS/helpfest-frontend/blob/main/demonstracao-responsividade.gif" alt="git demonstrando a responsividade do site">
+  <img src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/demonstracao-responsividade.gif" alt="git demonstrando a responsividade do site">
 </div>  
 <br>
 
@@ -45,12 +45,18 @@ Algumas das tecnologias utilizadas durante o projeto foram: <p>
 ### INSTALAÇÃO
 Após fazer o download do projeto, é necessário fazer a instalação de todas as dependências do projeto. Para isso abra o terminal do seu computador vá até a pasta aonde estão os arquivos do projeto e execute o comando abaixo.
 ```
-  //powershell
+  // powershell
   npm install
   
 ```  
 <br>
 
 ### DEMONSTRAÇÃO
+Segue algumas das telas do projeto:
+<div align="center">
+  <img alt="tela de entrada" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageEntrada.png">
+  <p><strong>Tela de entrada</strong></p>
+<div>  
+
 
 readme em edição
