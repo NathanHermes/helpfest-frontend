@@ -45,8 +45,7 @@ Algumas das tecnologias utilizadas durante o projeto foram: <p>
 ### INSTALAÇÃO
 Após fazer o download do projeto, é necessário fazer a instalação de todas as dependências do projeto. Para isso abra o terminal do seu computador vá até a pasta aonde estão os arquivos do projeto e execute o comando abaixo.
 ```
-
-  //não se esqueça esse comando tem que ser executado dentro da pasta aonde estão os arquivos
+  //powershell
   npm install
   
 ```  
