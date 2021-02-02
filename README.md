@@ -41,6 +41,7 @@ Algumas das tecnologias utilizadas durante o projeto foram: <p>
     <img alt="npm" src="https://img.shields.io/npm/v/node">
   </a>
 </p>  
+<br>
 
 ### INSTALAÇÃO
 Após fazer o download do projeto, é necessário fazer a instalação de todas as dependências do projeto. Para isso abra o terminal do seu computador vá até a pasta aonde estão os arquivos do projeto e execute o comando abaixo.
@@ -53,10 +54,11 @@ Após fazer o download do projeto, é necessário fazer a instalação de todas 
 
 ### DEMONSTRAÇÃO
 Segue algumas das telas do projeto:
+
 <br>
 <div align="center">
   <img alt="tela de entrada" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageEntrada.png">
-  <h4>Tela de entrada</h4>
+  <h3>Tela de entrada</h3>
 </div>  
 
 
