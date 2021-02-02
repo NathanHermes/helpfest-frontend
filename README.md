@@ -13,7 +13,7 @@ Helpfest é um trabalho anual desenvolvido pelos alunos [Nathan Hermes](https://
 
 O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de festas/eventos, seja elas organizadas por instituições privadas ou publicas e garantir uma ampla divulgação além de facilitar o acesso a essas festas pela população. O projeto conta com um [Front-end](https://github.com/NathanHGS/helpfest-frontend) e um [Back-end](https://github.com/NathanHGS/helpfest-backend)  e um [Mobile](https://github.com/NathanHGS/helpfest-mobile).
 
-## Frontend da aplicação
+## Front-end da aplicação
 <h3 align="center">
   <a href="#sobre">Sobre</a> •
   <a href="#instalação">Instalação</a> •
