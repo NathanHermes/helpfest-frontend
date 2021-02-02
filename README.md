@@ -64,9 +64,7 @@ Segue algumas das telas do projeto:
   <p><strong>Tela home</strong></p>
   <br>
   <img alt="tela de cadastro" src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/pageDetalheEvento.png">
-  <p><strong>Tela de cadastro</strong></p>
-  <br>
-</div>  
+  <p><strong>Tela de detalhe do evento</strong></p>
+</div>
 
-
-readme em edição
+#### Para ver o projeto em funcionamento acesse: [Helpfest](https://frontend-helpfest.herokuapp.com)
