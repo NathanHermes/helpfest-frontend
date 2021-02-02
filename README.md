@@ -21,15 +21,13 @@ O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de 
 <br>
 
 ### SOBRE
-<p align="center"> <strong>✔️ CONCLUÍDO COM SUCESSO ✔️ </strong></p>
+<p align="center"><strong>✔️ CONCLUÍDO COM SUCESSO ✔️</strong></p>
 
-O front-end foi desenvolvido para ter um layout simples, bonito, e totalmente responsivo, desde de smartphones até smart Tvs.
+O front-end foi desenvolvido para ter um layout simples, bonito, e totalmente responsivo, desde de smartphones até smart Tvs. Vale resaltar que toda a parte do WEB foi desenvolvida com foco nas instituições organizadoras dos eventos e não para o uso da população. Para a população foi desenvolvido um [app mobile](https://github.com/NathanHGS/helpfest-mobile)
 <div align="center">
   <img src="https://github.com/NathanHGS/helpfest-frontend/blob/main/demonstracao-responsividade.gif" alt="git demonstrando a responsividade do site">
 </div>  
 <br>
-
-<font family="Roboto Mono">Teste</font>
 
 ### TECNOLOGIAS
 <p align="center">
