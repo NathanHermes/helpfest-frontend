@@ -7,6 +7,12 @@
 <div align="center">
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/NathanHGS/helpfest-frontend">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/NathanHGS/helpfest-frontend">
+  <a href="https://pt-br.reactjs.org" target="_blank">
+    <img alt="ReactJS" src="https://img.shields.io/badge/ReactJS-v17.0.1-%2361dbfb">
+  </a>
+  <a href="https://nodejs.org/en/">
+    <img alt="npm" src="https://img.shields.io/npm/v/node">
+  </a>
 </div> 
 
 Helpfest é um trabalho anual desenvolvido pelos alunos [Nathan Hermes](https://github.com/NathanHGS) & [Pedro Piassi](https://github.com/PedroPiassi), estudantes do [Instituto Federal de São Paulo](https://scl.ifsp.edu.br) sob a supervisão do professor [Pedro Nobile](https://github.com/northonh).
@@ -27,20 +33,7 @@ O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de 
 Bem vindo ao front-end do Helpfest, essa parte da aplicação foi desenvolvido para ter um layout simples, bonito, e totalmente responsivo para a maioria das resoluções existentes. Vale resaltar que toda a parte do WEB foi desenvolvida com foco nas instituições organizadoras dos eventos e não para o uso da população. Para a população foi desenvolvido um [app mobile](https://github.com/NathanHGS/helpfest-mobile).
 <div align="center">
   <img src="https://github.com/NathanHGS/helpfest-frontend/blob/main/readme/demonstracao-responsividade.gif" alt="git demonstrando a responsividade do site">
-</div>  
-<br>
-
-Algumas das tecnologias utilizadas durante o projeto foram: <p>
-  <a href="https://pt-br.reactjs.org" target="_blank">
-    <img alt="ReactJS" src="https://img.shields.io/badge/ReactJS-v17.0.1-%2361dbfb">
-  </a>
-  <a href="https://reactnative.dev" target="_blank">
-    <img alt="React-Native" src="https://img.shields.io/badge/React--Native-v0.63-%2361dbfb">
-  </a>
-  <a href="https://nodejs.org/en/">
-    <img alt="npm" src="https://img.shields.io/npm/v/node">
-  </a>
-</p>  
+</div>   
 <br>
 
 ### INSTALAÇÃO
