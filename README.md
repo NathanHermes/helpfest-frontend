@@ -16,7 +16,8 @@ O Helpfest é uma aplicação que tem como objetivo facilitar a divulgação de 
 ## Frontend da aplicação
 <h3 align="center">
   <a href="#sobre">Sobre</a> •
-  <a href="#tecnologias">Tecnologias</a>
+  <a href="#tecnologias">Instalação</a> •
+  <a href="#demonstracao">Demonstação</a>
 </h3> 
 <br>
 
@@ -29,7 +30,7 @@ Bem vindo ao front-end do Helpfest, essa parte da aplicação foi desenvolvido p
 </div>  
 <br>
 
-### TECNOLOGIAS
+### INSTALAÇÃO
 Durante todo o desenvolvimento foram utilizadas as seguintes tecnologias:
 <p align="center">
   <a href="https://pt-br.reactjs.org" target="_blank">
@@ -43,6 +44,6 @@ Durante todo o desenvolvimento foram utilizadas as seguintes tecnologias:
   </a>
 </p>  
 
-### Instalação
+### DEMONSTRAÇÃO
 
 readme em edição
